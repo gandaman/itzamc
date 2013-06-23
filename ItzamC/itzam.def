@@ -1,0 +1,69 @@
+LIBRARY	"ItzamC"
+
+EXPORTS
+; built-in key comparisons
+	itzam_comparator_int32
+	itzam_comparator_uint32
+	itzam_comparator_string
+; shared memory
+	itzam_shmem_obtain
+	itzam_shmem_close
+	itzam_shmem_getptr
+	itzam_shmem_freeptr
+; portable mutex
+	itzam_mutex_obtain
+	itzam_mutex_destroy
+	itzam_mutex_lock
+	itzam_mutex_unlock
+; variable-length data file
+	itzam_set_default_error_handler
+	itzam_datafile_alloc
+	itzam_datafile_free
+	itzam_datafile_exists
+	itzam_datafile_create
+	itzam_datafile_open
+	itzam_datafile_close
+	itzam_datafile_lock
+	itzam_datafile_unlock
+	itzam_datafile_is_open
+	itzam_datafile_get_refbits
+	itzam_datafile_get_version
+	itzam_datafile_set_error_handler
+	itzam_datafile_tell
+	itzam_datafile_seek
+	itzam_datafile_rewind
+	itzam_datafile_get_next_open
+	itzam_datafile_write_flags
+	itzam_datafile_write
+	itzam_datafile_read
+	itzam_datafile_read_alloc
+	itzam_datafile_remove
+	itzam_datafile_transaction_start
+	itzam_datafile_transaction_commit
+	itzam_datafile_transaction_rollback
+; B-tree indexes
+	itzam_btree_alloc
+	itzam_btree_free
+	itzam_btree_create
+	itzam_btree_open
+	itzam_btree_close
+	itzam_btree_count
+	itzam_btree_ticker
+	itzam_btree_lock
+	itzam_btree_unlock
+	itzam_btree_is_open
+	itzam_btree_set_error_handler
+	itzam_btree_insert
+	itzam_btree_find
+	itzam_btree_remove
+	itzam_btree_cursor_count
+	itzam_btree_transaction_start
+	itzam_btree_transaction_commit
+	itzam_btree_transaction_rollback
+; B-tree index cursor
+	itzam_btree_cursor_create
+	itzam_btree_cursor_valid
+	itzam_btree_cursor_free
+	itzam_btree_cursor_next
+	itzam_btree_cursor_reset
+	itzam_btree_cursor_read
